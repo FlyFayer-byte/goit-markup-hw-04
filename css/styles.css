@@ -40,6 +40,10 @@ img {
 }
 
 /*----------Header----------*/
+.header {
+  box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
+    0 1px 6px rgba(46, 47, 66, 0.08);
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -78,6 +82,22 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
+}
+/* Застосувати стиль до першого <li> і його .nav-link */
+.menu li:first-child .nav-link {
+  position: relative;
+  color: #404bbf;
+}
+.menu li:first-child .nav-link::after {
+  content: ""; /* Порожній контент для псевдоелемента */
+  width: 100%; /* Ширина лінії під першим пунктом меню */
+  position: absolute; /* Позиціюємо лінію під першим пунктом меню */
+  left: 0; /* Відступ від лівого краю */
+  bottom: -1px; /* Відступ від нижнього краю */
+  height: 4px; /* Висота лінії під першим пунктом меню */
+  background-color: #404bbf; /* Колір лінії під першим пунктом меню */
+  border-radius: 2px; /* Закруглення кутів лінії */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни кольору */
 }
 .nav-link:hover {
   color: #404bbf;
@@ -184,7 +204,7 @@ img {
 .benefit-items {
   width: calc((100% - 72px) / 4);
 }
-
+/*----------Section 2----------*/
 /*----------Our Team----------*/
 .our-team {
   background-color: #f4f4fd;
@@ -213,7 +233,13 @@ img {
 .member-position {
   text-align: center;
 }
-
+.social-icons {
+  display: flex;
+  align-items: center; /* вирівнюємо іконки по вертикалі */
+  justify-content: center; /* вирівнюємо іконки по горизонталі */
+  /*  gap: 16px;
+  margin-top: 16px;*/
+}
 /*----------Our Portfolio----------*/
 .portfolio {
   padding: 120px 0;

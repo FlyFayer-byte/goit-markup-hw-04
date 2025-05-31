@@ -253,13 +253,6 @@ img {
 .member-position {
   text-align: center;
 }
-.social-icons {
-  display: flex;
-  align-items: center; /* вирівнюємо іконки по вертикалі */
-  justify-content: center; /* вирівнюємо іконки по горизонталі */
-  /*  gap: 16px;
-  margin-top: 16px;*/
-}
 .social-icon {
   display: flex;
   justify-content: center;

@@ -87,6 +87,7 @@ img {
 .menu li:first-child .nav-link {
   position: relative;
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни кольору */
 }
 .menu li:first-child .nav-link::after {
   content: ""; /* Порожній контент для псевдоелемента */
@@ -97,7 +98,6 @@ img {
   height: 4px; /* Висота лінії під першим пунктом меню */
   background-color: #404bbf; /* Колір лінії під першим пунктом меню */
   border-radius: 2px; /* Закруглення кутів лінії */
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни кольору */
 }
 .nav-link:hover {
   color: #404bbf;
@@ -118,9 +118,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-info li:first-child .contact-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover {

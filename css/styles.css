@@ -252,6 +252,7 @@ img {
 }
 .member-position {
   text-align: center;
+  margin-bottom: 8px;
 }
 .social-icons {
   display: flex;
@@ -274,7 +275,7 @@ img {
   align-items: center; /* вирівнюємо іконки по вертикалі */
   justify-content: center; /* вирівнюємо іконки по горизонталі */
 }
-.icon:focus {
+.icon:hover {
   background-color: #404bbf; /* змінюємо колір при наведенні */
 }
 .icon:focus {

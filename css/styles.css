@@ -253,6 +253,11 @@ img {
 .member-position {
   text-align: center;
 }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
 .social-icon {
   display: flex;
   justify-content: center;
@@ -265,11 +270,11 @@ img {
   height: 100%;
   background-color: var(--iris);
   border-radius: 50%;
-  display: flex;  /* використовуємо flexbox для вирівнювання */
-  align-items: center; /* вирівнюємо іконки по вертикалі */ 
+  display: flex; /* використовуємо flexbox для вирівнювання */
+  align-items: center; /* вирівнюємо іконки по вертикалі */
   justify-content: center; /* вирівнюємо іконки по горизонталі */
 }
-.icon:hover {
+.icon:focus {
   background-color: #404bbf; /* змінюємо колір при наведенні */
 }
 .icon:focus {

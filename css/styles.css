@@ -281,7 +281,9 @@ img {
 .icon:active {
   background-color: #404bbf; /* змінюємо колір при наведенні */
 }
-
+.icon:focus {
+  background-color: #404bbf; /* змінюємо колір при наведенні */
+}
 .style-social-icon {
   fill: #f4f4fd; /* колір іконки */
 }

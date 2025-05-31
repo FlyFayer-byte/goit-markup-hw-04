@@ -1,3 +1,6 @@
+:root {
+  --iris: #4d5ae5;
+}
 /*----------Стилі для body----------*/
 body {
   font-family: "Roboto", sans-serif;
@@ -237,7 +240,7 @@ img {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); /* тінь */
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); /* тінь */
   border-radius: 0 0 4px 4px; /* закруглення кутів */
 }
 .personal-data {
@@ -256,6 +259,31 @@ img {
   justify-content: center; /* вирівнюємо іконки по горизонталі */
   /*  gap: 16px;
   margin-top: 16px;*/
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 40px;
+  height: 40px;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;  /* використовуємо flexbox для вирівнювання */
+  align-items: center; /* вирівнюємо іконки по вертикалі */ 
+  justify-content: center; /* вирівнюємо іконки по горизонталі */
+}
+.icon:hover {
+  background-color: #404bbf; /* змінюємо колір при наведенні */
+}
+.icon:focus {
+  background-color: #404bbf; /* змінюємо колір при фокусі */
+}
+.stylr-social-icon {
+  fill: #f4f4fd; /* колір іконки */
 }
 /*----------Our Portfolio----------*/
 .portfolio {

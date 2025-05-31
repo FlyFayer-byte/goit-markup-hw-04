@@ -266,6 +266,7 @@ img {
   gap: 24px;
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни кольору */
 }
 .icon {
   width: 100%;
@@ -275,7 +276,6 @@ img {
   display: flex; /* використовуємо flexbox для вирівнювання */
   align-items: center; /* вирівнюємо іконки по вертикалі */
   justify-content: center; /* вирівнюємо іконки по горизонталі */
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни кольору */
 }
 .icon:hover,
 .icon:focus {
@@ -313,9 +313,6 @@ img {
 .team-title,
 .portfolio-title {
   text-transform: capitalize;
-}
-.team-title,
-.portfolio-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;

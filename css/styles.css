@@ -314,9 +314,6 @@ img {
 .portfolio-name {
   margin-bottom: 8px;
 }
-.project-card:hover .project-info .portfolio-category{
-  transform: translatey(0);
-}
 /*-----*/
 .team-title,
 .portfolio-title {
@@ -374,6 +371,9 @@ img {
   width: 100%; /* Ширина опису дорівнює ширині зображення */
   transform: translateY(100%); /* Початкове положення опису поза межами видимості */
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація переміщення */
+}
+.project-card:hover .project-description {
+  transform: translatey(0);
 }
 /* Footer */
 .footer {

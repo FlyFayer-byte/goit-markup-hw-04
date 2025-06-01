@@ -387,7 +387,7 @@ img {
   display: flex;
   align-items: baseline;
 }
-.footer .footer-line {
+.footer-line {
   flex-direction: column; /* Вирівнюємо елементи вертикально */
   width: 100%;
   max-width: 264px;

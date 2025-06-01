@@ -277,12 +277,10 @@ img {
   justify-content: center; /* вирівнюємо іконки по горизонталі */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни кольору */
 }
- .icon:hover {
-  background-color: #404bbf; /* змінюємо колір при наведенні */
-}
+.icon:hover,
 .icon:focus {
   background-color: #404bbf; /* змінюємо колір при наведенні */
-} 
+}
 .style-social-icon {
   fill: #f4f4fd; /* колір іконки */
 }
@@ -301,6 +299,11 @@ img {
 }
 .project-card {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); /* тінь */
 }
 .project-info {
   padding: 32px 16px;
